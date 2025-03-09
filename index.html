@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SAP CDC</title>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-  <script id="gigya-script" src="https://cdns.eu1.gigya.com/js/gigya.js?apiKey=4_1tFBvx93ZyUjPTYTBGo2wA"></script>
+  <script id="gigya-script" src="https://cdns.eu1.gigya.com/js/gigya.js?apiKey=%VITE_GIGYA_APIKEY%"></script>
 </head>
 <body>  
 <div id="root" class="w-full h-full"></div>
@@ -17,116 +17,6 @@
     	}
  </script>
 
-
-<!-- <gigya-js id="gigya" api-key="4_1tFBvx93ZyUjPTYTBGo2wA" domain="eu1.gigya.com" class="w-full h-full">
-  <div id="nfl" slot="authenticated" ></div>
-     -->
-  <!-- <div id="root"></div> -->
- <!-- <gigya-screen
-    id="screen"
-    screen-set="CDC-LoginRegistration"
-    screen="gigya-complete-registration-screen"
-    popup="false"
-    >
-    <template>
-      
-      <form class="gigya-profile-form max-w-md">
-        <div
-          class="fixed inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-          <div
-            class="bg-white/95 backdrop-blur-sm text-gray-900 rounded-2xl p-8 max-w-md w-full shadow-2xl border border-white/20 relative">
-            <button
-              type="button"
-              onclick="document.querySelector('#screen').remove()"
-              class="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition-colors"
-              aria-label="Close"
-            >
-              <iconify-icon
-                icon="lucide:x"
-                class="text-gray-500"
-                width="20"
-                height="20"
-              />
-            </button>
-
-            <div class="flex items-center space-x-3 mb-6">
-              <div class="bg-blue-100 p-2 rounded-lg">
-                <iconify-icon
-                  icon="lucide:user-check"
-                  class="text-blue-600"
-                  width="24"
-                  height="24"
-                />
-              </div>
-              <div>
-                <h2 class="text-2xl font-bold text-gray-900">
-                  Welcome back, Tom!
-                </h2>
-                <p class="text-gray-500 text-sm">
-                  Just a few quick preferences to set up
-                </p>
-              </div>
-            </div>
-            <div class="space-y-4">
-              <label
-                class="flex items-start space-x-4 p-4 rounded-xl border border-gray-100 hover:bg-blue-50/50 transition-colors cursor-pointer">
-                <input type="checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                       name="preferences.btp-help.isConsentGranted" required/>
-                <div class="space-y-1">
-                      <span class="text-sm font-medium text-gray-900 block">
-                        BTP Support Community
-                      </span>
-                  <span class="text-sm text-gray-500">
-                        I'm happy to help CDC colleagues with their BTP questions
-                      </span>
-                </div>
-              </label>
-
-              <label
-                class="flex items-start space-x-4 p-4 rounded-xl border border-gray-100 hover:bg-blue-50/50 transition-colors cursor-pointer">
-                <input type="checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                       name="preferences.share-demo.isConsentGranted" required/>
-                <div class="space-y-1">
-                      <span class="text-sm font-medium text-gray-900 block">
-                        Share the Experience
-                      </span>
-                  <span class="text-sm text-gray-500">
-                        I'll share this demo on Teams, Slack, or social networks if I find it valuable
-                      </span>
-                </div>
-              </label>
-            </div>
-
-            <div class="mt-8 flex justify-end space-x-4 items-center">
-              <button
-                type="button"
-                class="px-4 py-2 text-gray-500 hover:text-gray-700 font-medium flex items-center space-x-2 transition-colors"
-                 >
-                <span>Skip for now</span>
-                <iconify-icon
-                  icon="lucide:arrow-right"
-                  width="16"
-                  height="16"
-                />
-              </button>
-              <button
-                type="submit"
-                class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 flex items-center space-x-2 font-medium shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:shadow-blue-600/20"
-              >
-                <span>Continue</span>
-                <iconify-icon
-                  icon="lucide:check"
-                  width="16"
-                  height="16"
-                />
-              </button>
-            </div> 
-             </div>
-          </div>
-         </form>
-    </template>
-  </gigya-screen>-->
-<!-- </gigya-js> -->
 <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
